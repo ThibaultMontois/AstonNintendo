@@ -1,128 +1,134 @@
 /***** NEWSBAR *****/
 .newsbar {
-    width: 33.33333333%;
-    padding: 0 5px;
+  width: 25%;
+  padding: 0 5px;
+}
+
+@media screen and (max-width: 1199px) {
+  .newsbar {
+    width: 100%;
   }
-  
-  .newsbar h1 {
-    padding: 8px;
-    border-left: 4px solid #f4f4f4;
-    font-size: 1.2rem;
-    font-weight: bold;
-    line-height: 1.5;
-    color: #333;
-  }
-  
-  .newsbar a {
-    text-decoration: none;
-  }
-  
-  .newsbar svg {
-    height: .7em;
-  }
-  
-  .latest-news, 
-  .coming-soon, 
-  .recent-releases {
-    margin-bottom: 12px;
-  }
-  
-  .latest-news div, 
-  .coming-soon div, 
-  .recent-releases div {
-    margin-bottom: 4px;
-    background-color: white;
-  }
-  
-  .latest-news div:first-child, 
-  .coming-soon div:first-child, 
-  .recent-releases div:first-child {
-    padding: 12px;
-  }
-  
-  .latest-news img, 
-  .coming-soon img {
-    width: 105.75px;
-    height: 105.75px;
-  }
-  
-  .recent-releases img {
-    width: 100.75px;
-    height: 100.75px;
-  }
-  
-  .news-cards {
-    min-height: 125px;
-    padding: 8px 8px 12px 8px;
-    display: flex;
-  }
-  
-  .news-cards a {
-    padding: 4px 8px;
-  }
-  
-  .news-cards h2 {
-    margin-bottom: 4px;
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #333;
-  }
-  
-  .news-cards a:hover h2 {
-    text-decoration: underline;
-  }
-  
-  .news-cards p:first-of-type {
-    margin-bottom: 8px;
-    font-size: .8rem;
-    line-height: 1.5;
-    color: #999999;
-  }
-  
-  .news-cards p:last-of-type {
-    font-size: .93rem;
-    line-height: 1.5;
-    color: #666
-  }
-  
-  .latest-news div:last-of-type, 
-  .coming-soon div:last-of-type, 
-  .recent-releases div:last-of-type {
-    padding: 7px 24px;
-    text-align: right;
-  }
-  
-  .latest-news div:last-of-type a, 
-  .coming-soon div:last-of-type a, 
-  .recent-releases div:last-of-type a {
-    margin: 8px 0;
-    font-size: 1rem;
-    font-weight: 600;
-    line-height: 1.5;
-    text-transform: uppercase;
-  }
-  
-  .latest-news div:last-of-type a {
-    color: #333;
-  }
-  
-  .latest-news div:last-of-type a:hover {
-    text-decoration: underline;
-  }
-  
-  .coming-soon div:last-of-type a, 
-  .recent-releases div:last-of-type a {
-    color: #e60012;
-  }
-  
-  .latest-news div:last-of-type svg, 
-  .coming-soon div:last-of-type svg, 
-  .recent-releases div:last-of-type svg {
-    margin-left: 4px;
-    transition: 0.5s linear;
-  }
-  
-  .coming-soon div:last-of-type a:hover~svg, 
-  .recent-releases div:last-of-type a:hover~svg {
-    transform: translate(2px);
-  }
+}
+
+.newsbar h1 {
+  padding: 8px;
+  border-left: 4px solid #f4f4f4;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #333;
+}
+
+.newsbar a {
+  text-decoration: none;
+}
+
+.newsbar svg {
+  height: .7em;
+}
+
+.latest-news, 
+.coming-soon, 
+.recent-releases {
+  margin-bottom: 12px;
+}
+
+.latest-news div, 
+.coming-soon div, 
+.recent-releases div {
+  margin-bottom: 4px;
+  background-color: white;
+}
+
+.latest-news div:first-child, 
+.coming-soon div:first-child, 
+.recent-releases div:first-child {
+  padding: 12px;
+}
+
+.latest-news img, 
+.coming-soon img {
+  width: 105.75px;
+  height: 105.75px;
+}
+
+.recent-releases img {
+  width: 100.75px;
+  height: 100.75px;
+}
+
+.news-cards {
+  min-height: 125px;
+  padding: 8px 8px 12px 8px;
+  display: flex;
+}
+
+.news-cards a {
+  padding: 4px 8px;
+}
+
+.news-cards h2 {
+  margin-bottom: 4px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.news-cards a:hover h2 {
+  text-decoration: underline;
+}
+
+.news-cards p:first-of-type {
+  margin-bottom: 8px;
+  font-size: .8rem;
+  line-height: 1.5;
+  color: #999999;
+}
+
+.news-cards p:last-of-type {
+  font-size: .93rem;
+  line-height: 1.5;
+  color: #666
+}
+
+.latest-news div:last-of-type, 
+.coming-soon div:last-of-type, 
+.recent-releases div:last-of-type {
+  padding: 7px 24px;
+  text-align: right;
+}
+
+.latest-news div:last-of-type a, 
+.coming-soon div:last-of-type a, 
+.recent-releases div:last-of-type a {
+  margin: 8px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.latest-news div:last-of-type a {
+  color: #333;
+}
+
+.latest-news div:last-of-type a:hover {
+  text-decoration: underline;
+}
+
+.coming-soon div:last-of-type a, 
+.recent-releases div:last-of-type a {
+  color: #e60012;
+}
+
+.latest-news div:last-of-type svg, 
+.coming-soon div:last-of-type svg, 
+.recent-releases div:last-of-type svg {
+  margin-left: 4px;
+  transition: 0.5s linear;
+}
+
+.coming-soon div:last-of-type a:hover~svg, 
+.recent-releases div:last-of-type a:hover~svg {
+  transform: translate(2px);
+}
