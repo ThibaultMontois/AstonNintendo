@@ -15,9 +15,8 @@ html {
 
 body {
   height: 100%;
+  background-color: #F4F4F4;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-  overflow-y: scroll;
 }
 
 button {
@@ -26,139 +25,15 @@ button {
   background: none;
 }
 
-/********** HEADER **********/
-header {
-  position: fixed;
-  width: 100%;
-  height: 72px;
-  padding: 0 20px 0 24px;
-  border-bottom: 1px solid var(--sidebar-bg-color);
-  background-color: var(--nav-bg-color);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header__logo {
-  line-height: 0;
-}
-
-.header__logo svg {
-  height: 1.8em;
-}
-
-/***** NAV *****/
-nav ul {
-  display: flex;
-}
-
-nav li {
-  margin-left: 9px;
-}
-
-nav button {
-  width: 70px;
-  height: 70px;
-}
-
-nav button:hover {
-  cursor: pointer;
-  text-decoration: underline var(--text-color);
-}
-
-nav svg {
-  height: 2.1em;
-  margin-bottom: 2px;
-}
-
-nav p {
-  padding: 0 4px;
-  font-size: .7143rem;
-  font-weight: 500;
-  color: var(--text-color);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-
 /********** MAIN **********/
-
 main {
   height: 100%;
 }
 
-/***** SIDEBAR *****/
-
-.sidebar {
-  position: fixed;
-  top: 72px;
-  height: 100%;
-  background-color: var(--sidebar-bg-color);
-  display: flex;
-  flex-direction: column;
-}
-
-.sidebar button {
+/********** PAGE-CONTENT **********/
+.page-content {
   position: relative;
-  width: 88px;
-  min-height: 88px;
-  margin: 0 0 1px -1px;
-  padding: 8px;
-  background-color: var(--nav-bg-color);
-}
-
-.sidebar button:hover {
-  filter: brightness(95%);
-}
-
-.sidebar__button__corner {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 8px;
-  height: 8px;
-}
-
-.sidebar__button__icon {
-  height: 2.35em;
-  margin: 8px 0;
-}
-
-.sidebar p {
-  font-size: 80%;
-  color: var(--text-color);
-}
-
-.sidebar button:nth-child(8), 
-.sidebar button:nth-child(9) {
-  min-height: 56px;
-}
-
-.sidebar button:nth-child(9) p {
-  font-size: 2rem;
-  font-weight: 400;
-}
-
-.sidebar a {
-  width: 88px;
-  height: 100%;
-  padding: 8px;
-}
-
-.sidebar a div {
-  position: absolute;
-  left: 30px;
-  bottom: 72px;
-  width: 28px;
-  height: 28px;
-  padding: 8px;
-  border-radius: 4px 4px 0 0;
-  background-color: white;
-}
-
-.sidebar a svg {
-  width: 12px;
-  height: 12px;
-  transform: rotate(180deg);
+  top: 78px;
+  left: 88px;
+  padding: 0 5px;
 }
