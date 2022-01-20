@@ -1,0 +1,44 @@
+:root {
+  --nav-bg-color: #E60012;
+  --sidebar-bg-color: #bf0010;
+  --text-color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 14px;
+}
+
+body {
+  height: 100%;
+  background-color: #F4F4F4;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+/********** MAIN **********/
+main {
+  height: 100%;
+}
+
+/********** PAGE-CONTENT **********/
+.page-content {
+  padding: 78px 5px 0 93px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1199px) {
+  .page-content {
+    flex-direction: column;
+  }
+}
