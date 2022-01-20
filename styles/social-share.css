@@ -1,0 +1,64 @@
+.social-share {
+    width: 75%;
+    margin: 30px 0 25px 0;
+    padding: 12px 0 9px 0;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1199px) {
+    .social-share {
+        width: 100%;
+    }
+}
+
+.social-share p {
+    font-size: 2.429rem;
+    font-weight: 700;
+    line-height: 1;
+    color: white;
+    text-transform: uppercase;
+}
+
+.social-share svg {
+    width: 26px;
+    height: 26px;
+    margin-right: 20px;
+}
+
+.social-share div {
+    margin-left: 50px;
+    display: flex;
+}
+
+.social-share a {
+    width: 200px;
+    height: 36px;
+    margin: 0 5px;
+    padding: 12px 50px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.social-share a:hover {
+    text-decoration: underline;
+}
+
+.social-share a:first-of-type {
+    background: #3B5998 url("https://cdn03.nintendo-europe.com/media/styles/images/icons/icon_facebook.svg") no-repeat;
+}
+.social-share a:last-of-type {
+    background: #55ACEE url("https://cdn03.nintendo-europe.com/media/styles/images/icons/icon_twitter.svg") no-repeat;
+}
+
+.social-share img {
+    width: 36px;
+    height: 36px;
+}
